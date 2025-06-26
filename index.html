@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoJuction - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+</head>
+
+<body>
+    <div class="container ">
+
+        <!-- section navigation bar -->
+
+        <nav class="navbar flex">
+            <div class="start flex">
+                <button class="btn humburger">
+                    <img width="27px" height="27px" src="image/svg-images/menu.svg" alt="menu" title="Menu">
+                </button>
+                <div class="log flex align-center justify-center">
+                    <a href="/home">
+                        <img src="image/svg-images/logo.svg" alt="Spotify" title="Asim">
+                    </a>
+                </div>
+            </div>
+            <div class="last-nav flex">
+                <div class="me">
+                    <a href="https://github.com/asimsaifioffical" target="_blank" class="app flex clck">
+                        <button class="btn right-nav connect-dev">
+                            <img src="image/svg-images/instagram.svg" alt="Instagram Page">
+                            Instagram
+                        </button>
+                    </a>
+                    <a href="https://github.com/asimsaifioffical" target="_blank" class="app flex clck">
+                        <button class="btn right-nav connect-dev">
+                            <img src="image/svg-images/github.svg" alt="GitHub Profile">
+                            GitHub
+                        </button>
+                    </a>
+                    <img src="image/svg-images/divider-line.svg" alt="divider" class="divider">
+                </div>
+                <div class="my">
+                    <button class="btn connect-dev right-nav profile" id="right-nav">
+                        <img src="image/svg-images/right-hand-point.svg" alt="point" class="rt-hand">
+                        Profiles
+                    </button>
+                    <button class="btn" id="log-in">Asim Saifi</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- left section -->
+
+        <div class="left border rounded">
+            <button class="btn close">
+                <img src="image/svg-images/close.svg" alt="Close">
+            </button>
+            <div class="left-box flex">
+                <Span>Song Collection</Span>
+                <button class="btn" id="add">
+                    <img src="image/svg-images/add.svg" alt="Add Your library">
+                </button>
+            </div>
+            <div class="library-1 rounded song-list">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- right right -->
+
+        <div class="right border rounded">
+            <div class="spotify-playlist">
+                <h2>Your Collection</h2>
+                <div class="card-container playlistAlbem flex">
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="seekbar-2">
+                    <div class="runTime">
+                        <div class="playbar-info">
+                        </div>
+                        <div class="playbar-time">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="song-btn flex" id="listen">
+                            <button class="btn flex" id="previous">
+                                <img src="image/svg-images/previous-song.svg" alt="Previous Song">
+                            </button>
+                            <button class="btn flex music-play psd">
+                                <img width="44px" height="32px" src="image/svg-images/play.svg" alt="Play">
+                            </button>
+                            <button class="btn flex" id="next">
+                                <img src="image/svg-images/next-song.svg" alt="Next Song">
+                            </button>
+                            <div class="volume">
+                                <button class="btn flex vol-btn">
+                                    <img width="17px" height="17px" src="image/svg-images/volume.svg" alt="Volume"
+                                        title="Volume" class="vol-line">
+                                </button>
+                                <div class="range">
+                                    <input type="range" min="0" max="100" name="Volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="JS/script.js"></script>
+    <!-- <script src="js.js"></script> -->
+</body>
+
+</html>
