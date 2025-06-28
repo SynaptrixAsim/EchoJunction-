@@ -120,7 +120,7 @@ async function displayPlaylist() {
             let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json();
             console.log(response);
-            myCard.innerHTML = myCard.innerHTML + `<div data-folder="${folder}" class="card">
+            myCard.innerHTML = myCard.innerHTML + `<div class="wdth"><div data-folder="${folder}" class="card">
                                             <div>
                                                 <div class="card-bg">
                                                     <img src="songs/${folder}/cover.jpg">
@@ -131,7 +131,7 @@ async function displayPlaylist() {
                                                 <div class="play-card detail">${response.title}</div>
                                                 <div class="play-card singer">${response.description}</div>
                                             </div>
-                                        </div>`
+                                        </div></div>`
         }
     };
 
